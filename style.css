@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap');
+
+body {
+      margin: 0%;
+      padding: 0%;
+}
+/*
+#header{
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 150px; /* Размер шапки */
+
+
+/*.head{
+      
+      text-align: center;
+      left: 50%;
+      color: aliceblue;
+      font-size: 30pt;
+      font-family: "Cinzel";
+}
+*/
+#one-block{
+      position: absolute;
+      height: 750px; /* Высота первого блока - обложки */
+      width: 100%;
+      
+      background-blend-mode: darken;
+      background-color: black;
+}
+.sprjpg{
+      filter: invert(100%);
+      position: absolute;
+
+      left: 100px;
+}
+.sprtext-h{
+      position: absolute;
+      top: 250px;
+      right: 240px;
+      font-size: 50pt;
+      color: aliceblue;
+      font-family: 'IM Fell DW Pica SC'
+}
+.paragraf-one-block{
+      position: absolute;
+      top: 350px;
+      right: 300px;
+      font-size: 20pt;
+      color: aliceblue;
+      font-family: "Caveat";
+}
+
+/* Второй лист. Галлерея, параграф. */
+
+#gallery{
+      position: absolute;
+      width: 100%;
+      height: 1000px;
+      top: 750px;
+      font-size: 20pt;
+      background-color: antiquewhite;
+}
+.paragraf-gallery{
+      margin: 5ex;
+      font-family: "Kurale";
+      text-align-last: center;
+}
+
+.titul-one{
+      font-family: "Vollkorn SC";
+      font-size: 40pt;
+      position: absolute;
+      right: 400px;
+      top: 400px;
+}
+.comment-one{
+      font-family: "Caveat";
+      font-size: 40pt;
+      position: absolute;
+      top: 450px;
+      right: 450px;
+}
+/* */
+
+
+body {margin: 0;padding: 0;}
+
+.folded {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  width: 640px;
+  height: 360px;
+  display: flex;
+}
+.folded-itm {
+  list-style: none;
+  width: 30%;
+  background: url(jpg/tulun.jpg);
+  background-size: cover;
+  height: 105%;
+  transition: 0.5s;
+}
+.folded:hover .folded-itm:nth-child(odd) {
+  transform: skewY(15deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0, .5);
+}
+.folded:hover .folded-itm:nth-child(even) {
+  transform: skewY(-15deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0, .5);
+}
+
+.folded .folded-itm:nth-child(1) {
+  background-position: 0;
+}
+.folded .folded-itm:nth-child(2) {
+  background-position: -160px;
+}
+.folded .folded-itm:nth-child(3) {
+  background-position: -320px;
+}
+.folded .folded-itm:nth-child(4) {
+  background-position: -480px;
+}
+
+/* */
+#two-image{
+      position: absolute;
+      width: 100%;
+      height: 900px;
+      top: 1750px;
+}
+
+body {
+      background: #AEB5FF;
+    }
+    
+    .box {
+      position: absolute;
+      left:20%;
+      right:20%; 
+      top: 100px;
+      overflow: hidden;
+      height: 700px;
+      width: 60%;
+      background: url('jpg/kropotkin.jpg') center left no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+    
+    .hover-effect {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(5, 8, 31, 0.62);
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+    }
+    
+    .box:hover .hover-effect {
+      opacity: 1;
+    }
+    
+    .hover-text {
+      position: absolute;
+      right: 0%;
+      bottom: 0;
+      display: block;
+      max-width: 100%;
+      padding: 40px 45px;
+      color: #e2e2e2;
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 15px;
+      font-family: "Proxima Nova";
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      transition: all 0.5s ease-in-out;
+    }
+    
+   
+    .h-ef {
+      font-size: 2em;
+      font-weight: 500;
+      padding: 0.8em 0;
+      margin-bottom: 0.3em;
+      border-bottom: 1px solid #fff;
+    }
+    
+    .paragraf-effect {
+        width: 70%;
+        line-height: 1.7em;
+        display: inline-block;
+        text-align: center;
+    }
